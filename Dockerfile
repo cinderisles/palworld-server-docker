@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     xdg-user-dirs=0.17-2 \
     procps=2:3.3.17-5 \
     wget=1.21-1+deb11u1 \
+    cron\
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "*/5 * * * * root /usr/local/bin/backup > /proc/1/fd/1 2>&1" > /etc/cron.d/backup
+service cron start
+
 if [[ ! "${PUID}" -eq 0 ]] && [[ ! "${PGID}" -eq 0 ]]; then
     printf "\e[0;32m*****EXECUTING USERMOD*****\e[0m\n"
     usermod -o -u "${PUID}" steam
