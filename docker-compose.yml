@@ -13,7 +13,7 @@ services:
         COMMUNITY: false
         SERVER_NAME: palkemon
         SERVER_PASSWORD: ${PALWORLD_SERVER_PASSWORD}
-        ENABLE_INVADER_ENEMY: false
+        ENABLE_INVADER_ENEMY: true
         PAL_EGG_DEFAULT_HATCHING_TIME: 1.000000
         ENABLE_NON_LOGIN_PENALTY: false
       volumes:
